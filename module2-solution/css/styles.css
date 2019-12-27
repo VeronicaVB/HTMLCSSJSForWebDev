@@ -1,0 +1,106 @@
+/*****Base Style***********/
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    padding-bottom: 2%;
+    color: #2963A7;
+    font-size: 2em;
+}
+
+h1,p{
+    font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+}
+
+
+.container{
+    width: 100%;
+ }
+
+.cl {
+    /* */
+    border: 1px solid black;
+    width: auto;
+    margin: 5px;
+    background-color: #F6E1E8;
+}
+
+p{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+p.title {
+    height: 50%;
+    width: 46%;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-top: auto;
+    position: relative;
+}
+
+p.title-one{
+    background-color: #FEDC17;
+}
+p.title-two{
+    background-color: #2963A7;
+    color: white;
+}
+p.title-three{
+    background-color: #FCDF91;
+}
+
+
+/********DESKTOP **********/
+@media(min-width: 992px){
+
+    .cl{
+        width: 30%;
+        float: left;
+    }
+    .cl-one{
+        margin-left: 2.5%;
+    }
+      .cl.cl-two {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+  
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+    .cl.cl-one, .cl.cl-two {
+        width: 48%;
+        height: 39%;
+        display: inline-block;
+    }
+
+    .cl.cl-two{
+        margin-left: 1%;
+    }
+
+    .cl.cl-three{
+        width: 98%;
+    }
+
+    .cl{
+         margin-bottom: 2%;
+    }
+
+}
+
+@media(max-width: 767px){
+
+    .cl{
+    width: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 6%;
+    }
+
+}
